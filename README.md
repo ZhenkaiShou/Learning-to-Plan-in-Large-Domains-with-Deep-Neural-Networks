@@ -10,10 +10,10 @@ This thesis aims to explore learning to plan in large domains with deep neural n
 This repository contains python codes for the implementation and experiments of this thesis, training an artificial player to play Othello from scratch. The main framework (training, basic network architecture) follows Alpha Zero. But we
 
 ### Prerequisites
-Python >= 3.5
-TensorFlow >= 1.4.0
-TQDM
-PyQt5
+* Python >= 3.5
+* TensorFlow >= 1.4.0
+* TQDM
+* PyQt5
 
 ### Running the Codes
 Install all the above packages and download all files in this repository.
