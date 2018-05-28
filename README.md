@@ -9,13 +9,13 @@ This thesis aims to explore learning to plan in large domains with deep neural n
 ## About this Repository
 This repository contains python codes for the implementation and experiments of this thesis, training an artificial player to play Othello from scratch. The main framework (training, basic network architecture) follows Alpha Zero. But we
 
-## Prerequisites
+### Prerequisites
 Python >= 3.5
 TensorFlow >= 1.4.0
 TQDM
 PyQt5
 
-## Running the Codes
+### Running the Codes
 Install all the above packages and download all files in this repository.
 To train the artificial Othello player, run the training.py file:
 ```
@@ -25,4 +25,28 @@ python3 training.py
 To play the game with user interface, run the playgame.py file:
 ```
 python3 playgame.py
+```
+### Hyperparameters
+All the hyperparameters can be tuned in the constants.py file.
+If you want to disable the random transition function (for data augmentation), set SYMMETRY to:
+```
+SYMMETRY               = [0]                 # Allowed symmetries
+```
+
+If you want to train the player using GPU, turn on the GPU option:
+```
+USE_GPU                = True                # Whether GPU is used during training
+```
+
+If you are using a server and want to better utilize the server resource, set NUM_PROCESSING to a proper value, e.g. 25:
+```
+NUM_PROCESSING         = 25                  # Number of multiprocessing
+```
+
+If you turn on the GPU option, be sure to tell the program which GPU TensorFlow can use and how much it can comsume for each process, e.g. use GPU No.0 and each process consumes 2% GPU during tree search:
+```
+VISIBLE_DEVICE_MCTS    = "0"                 # The index of device observable to tensorflow during tree search
+VISIBLE_DEVICE_OPTM    = "0"                 # The index of device observable to tensorflow during optimization
+MEMORY_MCTS            = 0.02                # The fraction of GPU consumption during tree search
+MEMORY_OPTM            = 0.9                 # The fraction of GPU consumption during optimization
 ```
