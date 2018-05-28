@@ -18,11 +18,11 @@ PyQt5
 ## Running the Codes
 Install all the above packages and download all files in this repository.
 To train the artificial Othello player, run the training.py file:
-'''
+```
 python3 training.py
-'''
+```
 
 To play the game with user interface, run the playgame.py file:
-'''
+```
 python3 playgame.py
-'''
+```
