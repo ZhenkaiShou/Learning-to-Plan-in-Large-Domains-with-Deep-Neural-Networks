@@ -28,6 +28,7 @@ python3 playgame.py
 ```
 ### Hyperparameters
 All the hyperparameters can be tuned in the constants.py file.
+
 If you want to disable the random transition function (for data augmentation), set SYMMETRY to:
 ```
 SYMMETRY               = [0]                 # Allowed symmetries
