@@ -9,7 +9,7 @@ In the domain of artificial intelligence, effective and efficient planning is on
 This thesis aims to explore learning to plan in large domains with deep neural networks. The main contributions of this thesis include: (1) a literature survey on learning to plan; (2) proposing a new network architecture that learns from planning, combining this network with a planner, implementing and testing this idea in the game Othello.
 
 ### Neural Networks that Learn from Planning
-The [neural network](./figures/Neural_Network_Architecture.pdf) can evaluate a certain state by using not only the current state itself but also the planning result starting from that state.
+The [neural network](./figures/Neural_Network_Architecture.pdf) can evaluate a certain state by using not only the current state itself but also the planning result starting from that state. The network learns feature from the current state and gives a basic estimation by using this feature. It also learns contextual feature from the planning result and corrects its basic estimation by using this contextual feature. 
 
 
 
