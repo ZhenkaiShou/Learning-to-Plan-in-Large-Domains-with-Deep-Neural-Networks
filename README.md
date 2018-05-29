@@ -1,4 +1,4 @@
-# Deep-Networks-that-Learn-to-Plan
+# Deep Neural Networks that Learn from Planning
 Repository for master thesis "Learning to Plan in Large Domains with Deep Neural Networks".
 
 ## About this Thesis
