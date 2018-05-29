@@ -11,7 +11,7 @@ This thesis aims to explore learning to plan in large domains with deep neural n
 ### Neural Networks that Learn from Planning
 The neural network can evaluate a certain state by using not only the current state itself but also the planning result starting from that state.
 
-![Neural Network Architecture](./figures/Neural_Network_Architecture.pdf)
+[[https://github.com/ZhenkaiShou/Learning-to-Plan-in-Large-Domains-with-Deep-Neural-Networks/blob/master/figures/Neural_Network_Architecture.pdf]]
 
 ## About this Repository
 This repository contains python codes for the implementation and experiments of this thesis, training an artificial player to play Othello from scratch.
